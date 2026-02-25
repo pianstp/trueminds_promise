@@ -27,7 +27,7 @@ export default function PaymentForm({ onSubmit }) {
   }
 
   return (
-    <section className="bg-[#f5f5f5] min-h-screen py-10">
+    <section className=" min-h-screen py-10">
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-white rounded-xl shadow-sm p-8 max-w-[520px] mx-auto">
           <h2 className="text-[22px] font-semibold mb-6">Payment</h2>

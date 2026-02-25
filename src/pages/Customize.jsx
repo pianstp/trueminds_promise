@@ -6,6 +6,7 @@ import FoodCustomization from "../components/FoodCustomization"
 
 import img1 from "../imgs/image 1.png"
 import img2 from "../imgs/image 2.png"
+import img3 from "../imgs/image 3.png"
 
 const foods = [
   {
@@ -43,14 +44,24 @@ export default function Customize() {
       <main className="flex-grow container mx-auto px-0 py-8">
         <div className="flex flex-col lg:flex-row gap-5 items-start">
           <div className="w-full lg:w-2/5 flex-shrink-0 flex items-stretch">
-            <div className="w-full rounded-xl overflow-hidden shadow-lg" style={{ height: imgHeight }}>
-              <img
-                src={img2}
-                alt="Food"
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
+  <div
+    className="w-full rounded-xl overflow-hidden shadow-lg border border-gray-200"
+    style={{ height: imgHeight }}
+  >
+    <img
+      src={img3}
+      alt="Food"
+      className="
+        w-full h-full 
+        object-cover object-center 
+        rounded-xl 
+        transition-transform duration-200 ease-in-out 
+        hover:scale-105
+      "
+    />
+  </div>
+</div>
+
 
           <div className="w-full lg:w-3/5 flex flex-col justify-stretch" ref={formRef}>
             <FoodCustomization food={food} onAddToCart={handleAddToCart} />

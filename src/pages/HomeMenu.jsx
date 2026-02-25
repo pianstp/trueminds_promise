@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Header from '../components/Header'
 // import CategorySidebar from '../components/CategorySidebar'
 import FoodCard from '../components/FoodCard'
@@ -7,8 +6,6 @@ import { foodData } from '../data/foodData'
 import bgImage from '../imgs/image 11.png'
 
 export default function HomeMenu() {
-  const [activeCategory, setActiveCategory] = useState('Popular')
-
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -26,18 +23,45 @@ export default function HomeMenu() {
           <div className="grid md:grid-cols-4 gap-8">
             {/* Menu Categories Title and Buttons */}
             <div className="md:col-span-4 space-y-12">
-              <div>
-                <h2 className="text-3xl font-bold text-textDark mb-6">Menu Categories</h2>
-                <div className="flex flex-col gap-2 mb-8 w-full max-w-xs bg-white p-4 rounded-xl shadow-md">
-                  {['Popular','Jollof Rice & Entrees','Swallow & Soups','Grills & Sides','Beverages','Desserts'].map(category => (
-                    <button
-                      key={category}
-                      onClick={() => setActiveCategory(category)}
-                      className={`px-4 py-3 rounded-lg transition font-semibold w-full text-left ${activeCategory === category ? 'bg-orangeMain text-white' : 'text-textDark hover:bg-gray-100'}`}
-                    >
-                      {category}
-                    </button>
-                  ))}
+              <div className="w-full">
+                {/* Section Title */}
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Menu Categories</h2>
+
+                {/* Categories Container */}
+                <div className="flex flex-col gap-2 mt-5 mb-8 bg-white p-6 rounded-xl shadow-md w-[100%]">
+                  {/* Active Category */}
+                  <button
+                    className="px-4 py-3 rounded-lg font-semibold w-full text-left 
+                 bg-orange-500 text-white transition"
+                  >
+                    Popular
+                  </button>
+
+                  {/* Other Categories */}
+                  <button className="px-4 py-3 rounded-lg font-semibold w-full text-left 
+                       text-gray-800 hover:bg-gray-100 transition">
+                    Jollof Rice &amp; Entrees
+                  </button>
+
+                  <button className="px-4 py-3 rounded-lg font-semibold w-full text-left 
+                       text-gray-800 hover:bg-gray-100 transition">
+                    Swallow &amp; Soups
+                  </button>
+
+                  <button className="px-4 py-3 rounded-lg font-semibold w-full text-left 
+                       text-gray-800 hover:bg-gray-100 transition">
+                    Grills &amp; Sides
+                  </button>
+
+                  <button className="px-4 py-3 rounded-lg font-semibold w-full text-left 
+                       text-gray-800 hover:bg-gray-100 transition">
+                    Beverages
+                  </button>
+
+                  <button className="px-4 py-3 rounded-lg font-semibold w-full text-left 
+                       text-gray-800 hover:bg-gray-100 transition">
+                    Desserts
+                  </button>
                 </div>
               </div>
 
