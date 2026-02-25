@@ -5,7 +5,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="h-20 bg-[#F9FAFB] border-b border-gray-100">
+    <header className="sticky top-0 z-[100] h-20 bg-[#F9FAFB] border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center relative">
 
         {/* Logo */}
@@ -25,7 +25,7 @@ export default function Header() {
           <Link to="/menu" className="text-gray-600 hover:text-orange-500 text-[15px] font-medium">
             Explore
           </Link>
-          <Link to="/order-complete" className="text-gray-600 hover:text-orange-500 text-[15px] font-medium">
+          <Link to="/cart" className="text-gray-600 hover:text-orange-500 text-[15px] font-medium">
             Order
           </Link>
           <Link to="/register" className="text-gray-600 hover:text-orange-500 text-[15px] font-medium">
@@ -62,14 +62,14 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <nav className="absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-md md:hidden flex flex-col px-6 py-4 space-y-3">
+          <nav className="fixed top-20 left-0 right-0 z-[110] bg-white border-t border-gray-100 shadow-md md:hidden flex flex-col px-6 py-4 space-y-3">
             <Link to="/" className="text-gray-600 hover:text-orange-500" onClick={() => setIsOpen(false)}>
               Home
             </Link>
             <Link to="/menu" className="text-gray-600 hover:text-orange-500" onClick={() => setIsOpen(false)}>
               Explore
             </Link>
-            <Link to="/order-complete" className="text-gray-600 hover:text-orange-500" onClick={() => setIsOpen(false)}>
+            <Link to="/cart" className="text-gray-600 hover:text-orange-500" onClick={() => setIsOpen(false)}>
               Order
             </Link>
             <Link to="/register" className="text-gray-600 hover:text-orange-500" onClick={() => setIsOpen(false)}>

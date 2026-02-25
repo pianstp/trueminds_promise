@@ -41,14 +41,13 @@ export default function Customize() {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto px-0 py-8">
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div className="flex flex-col lg:flex-row gap-5 items-start">
           <div className="w-full lg:w-2/5 flex-shrink-0 flex items-stretch">
-            <div className="w-full" style={{ height: imgHeight }}>
+            <div className="w-full rounded-xl overflow-hidden shadow-lg" style={{ height: imgHeight }}>
               <img
                 src={img2}
                 alt="Food"
-                className="rounded-xl object-cover shadow-lg w-full h-full"
-                style={{ boxShadow: "0 16px 32px rgba(0,0,0,0.08)" }}
+                className="object-cover w-full h-full"
               />
             </div>
           </div>

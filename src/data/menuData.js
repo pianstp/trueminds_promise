@@ -1,3 +1,6 @@
+import img7 from "../imgs/image 7.png"
+import img10 from "../imgs/image 10.png"
+
 export const menuItems = [
   {
     id: 1,
@@ -43,11 +46,13 @@ export const cartItems = [
     name: 'Jollof Rice Special',
     quantity: 2,
     price: 15.99,
+    image: img7,
   },
   {
     id: 2,
     name: 'Pepper Soup',
     quantity: 1,
     price: 12.99,
+    image: img10,
   },
 ]
