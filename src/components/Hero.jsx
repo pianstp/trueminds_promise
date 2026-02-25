@@ -3,7 +3,10 @@ import bgImage from '../imgs/b34e6c700df600b228e2ab2504fc9bbf7815c2ed.png'
 
 export default function Hero() {
   return (
-    <section className="relative w-full max-w-[1440px] mx-auto aspect-[1440/612] bg-cover bg-center" style={{ backgroundImage: `url(${bgImage})` }}>
+    <section
+      className="relative w-full max-w-[1440px] mx-auto min-h-[420px] sm:min-h-[500px] md:min-h-0 md:aspect-[1440/612] bg-cover bg-center"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center">
         <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
