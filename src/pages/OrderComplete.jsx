@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom"
+import Header from "../components/Header"
 
 export default function OrderComplete() {
   const orderId = "#123RGR231567Y"
 
   return (
-    <section className="min-h-screen bg-[#f5f5f5] flex items-center justify-center px-4">
-      <div className="flex flex-col items-center text-center max-w-md w-full">
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <section className="flex-grow bg-[#f5f5f5] flex items-center justify-center px-4">
+        <div className="flex flex-col items-center text-center max-w-md w-full">
         
         {/* SUCCESS ICON */}
         <div className="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mb-6">
@@ -53,7 +56,8 @@ export default function OrderComplete() {
         <p className="text-xs text-blue-600 hover:underline cursor-pointer">
           Need help with your order?
         </p>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   )
 }

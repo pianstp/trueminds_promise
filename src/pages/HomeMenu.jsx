@@ -32,7 +32,7 @@ export default function HomeMenu() {
                   {/* Active Category */}
                   <button
                     className="px-4 py-3 rounded-lg font-semibold w-full text-left 
-                 bg-orange-500 text-white transition"
+                 bg-orange-200 text-white transition"
                   >
                     Popular
                   </button>

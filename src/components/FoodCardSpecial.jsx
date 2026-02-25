@@ -22,7 +22,7 @@ export default function FoodCardSpecial({ name, description, price, image }) {
         <div className="flex items-center justify-between mt-3">
           <p className="text-[#D97706] font-bold">NGN {price}</p>
           <button
-            className="bg-[#D97706] text-white px-4 py-2 rounded-md hover:bg-[#B45309] transition duration-200"
+            className="bg-[#D97706] text-white px-4 py-2 rounded-md hover:bg-[#B45309] hover:scale-105 transition duration-200"
             onClick={handleAddToCart}
           >
             Add to Cart

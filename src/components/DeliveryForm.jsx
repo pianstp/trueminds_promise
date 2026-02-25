@@ -33,7 +33,7 @@ export default function DeliveryForm({ onSubmit }) {
               <div className="border rounded-md px-4 py-3 text-sm text-gray-700 flex justify-between items-start">
                 <p className="whitespace-pre-line leading-relaxed">{formData.address}</p>
 
-                <button type="button" className="text-orange-500 text-sm font-medium ml-4">
+                <button type="button" className="text-orange-500 text-sm font-medium ml-4 hover:scale-105 transition duration-200">
                   Change Address
                 </button>
               </div>
@@ -87,7 +87,7 @@ export default function DeliveryForm({ onSubmit }) {
 
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-md font-semibold transition"
+              className="w-full bg-orange-500 hover:bg-orange-600 hover:scale-105 text-white py-3 rounded-md font-semibold transition duration-200"
             >
               Continue to Payment
             </button>

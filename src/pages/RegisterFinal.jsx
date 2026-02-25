@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Header from '../components/Header'
 import FooterMain from '../components/FooterMain'
 import Hero from '../imgs/b34e6c700df600b228e2ab2504fc9bbf7815c2ed.png'
 
@@ -9,6 +10,7 @@ export default function RegisterFinal() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Header />
       <div className="flex-grow grid grid-cols-1 md:grid-cols-2">
         <div className="relative min-h-[300px] md:min-h-screen flex items-center justify-center p-8 bg-cover bg-center" style={{ backgroundImage: `url(${Hero})` }}>
           <div className="absolute inset-0 bg-black/40"></div>

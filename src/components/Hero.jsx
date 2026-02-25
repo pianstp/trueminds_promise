@@ -17,7 +17,7 @@ export default function Hero() {
         </p>
         <Link 
           to="/menu" 
-          className="bg-[#D97706] text-white px-6 py-3 rounded-md mt-5 hover:bg-[#B45309] transition inline-block w-fit"
+          className="bg-[#D97706] text-white px-6 py-3 rounded-md mt-5 hover:bg-[#B45309] hover:scale-105 transition duration-200 inline-block w-fit"
         >
           Explore Menu
         </Link>

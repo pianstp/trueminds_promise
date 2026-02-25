@@ -5,7 +5,6 @@ import FooterMain from "../components/FooterMain"
 import FoodCustomization from "../components/FoodCustomization"
 
 import img1 from "../imgs/image 1.png"
-import img2 from "../imgs/image 2.png"
 import img3 from "../imgs/image 3.png"
 
 const foods = [

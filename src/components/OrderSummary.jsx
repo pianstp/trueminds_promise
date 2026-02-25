@@ -94,7 +94,7 @@ export default function OrderSummary({
 
       <button
         onClick={onCheckout}
-        className="mt-6 w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-md font-semibold transition"
+        className="mt-6 w-full bg-orange-500 hover:bg-orange-600 hover:scale-105 text-white py-3 rounded-md font-semibold transition duration-200"
       >
         Proceed to Checkout
       </button>

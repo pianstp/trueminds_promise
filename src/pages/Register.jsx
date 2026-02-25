@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
+import Header from '../components/Header'
 
 export default function Register() {
   return (
-    <div className="min-h-screen bg-pageBg flex items-center justify-center py-12 px-4">
-      <div className="w-96 bg-cardBg rounded-card shadow-sm p-6">
+    <div className="min-h-screen bg-pageBg">
+      <Header />
+      <div className="flex items-center justify-center py-12 px-4">
+        <div className="w-96 bg-cardBg rounded-card shadow-sm p-6">
         <h2 className="text-[36px] font-bold text-textDark leading-tight mb-8 text-center">Create Account</h2>
         
         <form className="space-y-6">
@@ -57,6 +60,7 @@ export default function Register() {
             Login
           </Link>
         </p>
+        </div>
       </div>
     </div>
   )

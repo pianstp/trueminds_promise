@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Header from '../components/Header'
 import FooterMain from '../components/FooterMain'
 
 export default function Register() {
@@ -8,6 +9,7 @@ export default function Register() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Header />
       <div className="flex-grow grid md:grid-cols-2">
         <div className="hidden md:flex relative bg-gradient-to-br from-orangeMain to-orange-600 items-center justify-center p-12">
           <div className="absolute inset-0 bg-orangeMain opacity-85"></div>

@@ -1,12 +1,22 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const location = useLocation()
+  const pathname = location.pathname.toLowerCase()
+  const isAuthRoute =
+    pathname.includes('/login') ||
+    pathname.includes('/register') ||
+    pathname.includes('/signup')
+
+  if (isAuthRoute) return null
 
   return (
-    <header className="sticky top-0 z-[100] h-20 bg-[#F9FAFB] border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-6 h-full flex items-center relative">
+    <>
+      <div className="h-20" aria-hidden="true" />
+      <header className="fixed top-0 left-0 right-0 z-[200] h-20 bg-[#F9FAFB] border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-6 h-full flex items-center relative bg-[#F9FAFB]">
 
         {/* Logo */}
         <Link
@@ -37,7 +47,7 @@ export default function Header() {
         <div className="ml-auto hidden md:block">
           <Link
             to="/login"
-            className="bg-[#F97316] hover:bg-[#EA580C] text-white px-6 py-2 rounded-lg text-sm font-semibold transition duration-200"
+            className="bg-[#F97316] hover:bg-[#EA580C] hover:scale-105 text-white px-6 py-2 rounded-lg text-sm font-semibold transition duration-200"
           >
             Login
           </Link>
@@ -62,7 +72,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <nav className="fixed top-20 left-0 right-0 z-[110] bg-white border-t border-gray-100 shadow-md md:hidden flex flex-col px-6 py-4 space-y-3">
+          <nav className="fixed top-20 left-0 right-0 z-[210] bg-white border-t border-gray-100 shadow-md md:hidden flex flex-col px-6 py-4 space-y-3">
             <Link to="/" className="text-gray-600 hover:text-orange-500" onClick={() => setIsOpen(false)}>
               Home
             </Link>
@@ -77,7 +87,7 @@ export default function Header() {
             </Link>
             <Link
               to="/login"
-              className="bg-[#F97316] text-white px-4 py-2 rounded-lg mt-2 text-center"
+              className="bg-[#F97316] hover:bg-[#EA580C] hover:scale-105 text-white px-4 py-2 rounded-lg mt-2 text-center transition duration-200"
               onClick={() => setIsOpen(false)}
             >
               Login
@@ -86,5 +96,6 @@ export default function Header() {
         )}
       </div>
     </header>
+    </>
   )
 }

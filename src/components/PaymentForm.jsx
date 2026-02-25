@@ -120,7 +120,7 @@ export default function PaymentForm({ onSubmit }) {
 
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-md font-semibold transition"
+              className="w-full bg-orange-500 hover:bg-orange-600 hover:scale-105 text-white py-3 rounded-md font-semibold transition duration-200"
             >
               Pay NGN 9,900
             </button>
