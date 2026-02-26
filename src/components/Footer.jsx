@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 text-pageBg">
           <div>
             <h3 className="text-[20px] font-bold mb-4">About</h3>
-            <p className="text-[14px]">
+            <p className="text-[15px]">
               Bringing the authentic flavors of Nigerian home cooking to your table, with passion and care.
             </p>
           </div>
@@ -25,7 +25,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-[20px] font-bold mb-4">Contact Us</h3>
-            <ul className="space-y-2 text-[14px]">
+            <ul className="space-y-2 text-[15px] font-medium">
               <li>+234 123 456 7890</li>
               <li>hello@chukskitchen.com</li>
               <li>123 Food Street, Lagos, Nigeria</li>

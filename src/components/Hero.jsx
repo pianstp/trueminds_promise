@@ -9,7 +9,7 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+        <h1 className="text-4xl md:text-1xl font-bold text-white leading-tight py-8">
           The Heart of Nigerian Home Cooking
         </h1>
         <p className="text-gray-200 mt-3 max-w-xl">
